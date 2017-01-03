@@ -1,0 +1,28 @@
+h1 {
+  color: darkGreen;
+}
+
+h1, h2 {
+  font-family: Georgia;
+  text-align: center;
+}
+
+p {
+  line-height: 19px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: blue;
+}

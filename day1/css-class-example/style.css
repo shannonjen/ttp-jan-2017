@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: green;
+  background-color: yellow;
+}
+
+h2 {
+  color: pink;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 96px;
+}
+
+h2 {
+  color: blue;
+}
+.happy {
+  background-color: red;
+}
+
+#headline {
+  background-color: orange;
+}
