@@ -2,3 +2,30 @@
   width: 50%;
   float: left;
 }
+
+.social {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  position: fixed;
+  top: 200px;
+
+}
+
+.social p {
+  color: white;
+  text-align: center;
+}
+.main {
+  margin: 0 50px;
+}
+
+.monkeypic {
+  float: left;
+  margin-right: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
