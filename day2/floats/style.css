@@ -1,0 +1,36 @@
+/*div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  float: left;
+}*/
+
+.header {
+  height: 200px;
+  background-color: red;
+
+}
+
+.col1, .col2 {
+  height: 500px;
+  width: 40%;
+  background-color: blue;
+  float: left;
+  margin: 4%;
+
+}
+
+.col2 {
+
+}
+
+.footer {
+  height: 100px;
+  background-color: green;
+  clear: left;
+
+}
+img {
+  float: left;
+}

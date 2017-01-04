@@ -1,0 +1,26 @@
+h1 {
+  margin: 5px;
+  border: 10px black dashed;
+  padding: 8px;
+  /*width: 50%;*/
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  width: 20%;
+  border: 5px red solid;
+  display: inline-block;
+}
+.p1 {
+
+}
+.p2 {
+
+}
+.p3 {
+
+}
+.p4 {
+
+}
