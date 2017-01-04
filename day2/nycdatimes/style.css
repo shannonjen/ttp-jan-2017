@@ -9,6 +9,8 @@
   background-color: blue;
   position: fixed;
   top: 200px;
+  background-image: url(fb.png);
+  background-size: cover;
 
 }
 
