@@ -1,0 +1,35 @@
+body {
+  background-color: orange;
+  color: white;
+  font-family: Arial;
+  background-image: url(nycgif.gif);
+  background-size: cover;
+  background-repeat: none;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  float: right;
+}
+
+h1 {
+  display: inline;
+}
+
+.projectbox {
+  background-color: gray;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 4px 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 0 10px;
+}
