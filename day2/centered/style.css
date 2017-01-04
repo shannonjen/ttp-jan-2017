@@ -1,0 +1,32 @@
+body {
+  background-color: orange;
+  color: white;
+  font-family: Arial;
+}
+
+.centeredBox {
+  border: 5px solid white;
+  width: 100px;
+
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+
+}
+
+ul {
+  padding: 0;
+  float: right;
+}
+
+li {
+  display: inline-block;
+  padding-right: 6px;
+}
+
+a {
+  display: inline-block;
+  padding-right: 12px;
+}
