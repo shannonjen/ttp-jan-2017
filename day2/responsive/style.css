@@ -4,6 +4,11 @@
   background-color: red;
   margin: 40px;
   float: left;
+  background-color: pink;
+}
+
+.pic1 {
+
   background-image: url(nycgif.gif);
   background-size: cover;
 }
