@@ -10,3 +10,11 @@ function clickme() {
 
 console.log("Hi there, is it me your looking for?")
 // alert("Your computer is infected with a virus!!!");
+
+
+var array1 = ["Dog", "Cat", "Fish"];
+var array2 = ["Apple", "Kiwi", "Grape"];
+
+var array3 = [array1, array2];
+
+console.log(array3[0][1]);
