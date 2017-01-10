@@ -1,8 +1,8 @@
-$(document).ready(function(){
-	alert("Blocked");
-	
-	
-});
+// $(document).ready(function(){
+// 	alert("Blocked");
+//
+//
+// });
 
 
 
@@ -12,10 +12,5 @@ setInterval(function(){
 	console.log(randomColor);
 
 	$('body').css("background-color",randomColor );
-	
+
 }, 1000);
-
-
-
-
-
