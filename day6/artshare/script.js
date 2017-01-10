@@ -1,16 +1,19 @@
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
   $.ajax({
-    type: "GET",
-    url: 'http://api.spotify.com/v1/search',
+    type: "POST",
+    url: 'http://art-share.herokuapp.com/api/v1/users/',
     data: {
-      q: document.querySelector('#search').value,
-      type: 'artist'
+      user: {
+        fname: "Hey there, how are you?",
+        lname: "I'm fine",
+        password: "1234",
+        email: "biebs@bieber.com"
+      }
     },
     success: function (response) {
-      var pic = response.artists.items[0].images[0].url;
-      $(".imgCont").html("<img src="+pic+">")
-      console.log(response.artists.items[0].images[0].url)
+
+      console.log(response)
     }
   })
 
