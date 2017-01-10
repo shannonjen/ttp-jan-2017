@@ -1,0 +1,3 @@
+function myFunc(){
+  alert("hello")
+}
