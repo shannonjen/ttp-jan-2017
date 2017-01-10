@@ -1,10 +1,18 @@
-var someOtherFunction = function(){
-  alert("Hello World");
-}
+// var someOtherFunction = function(){
+//   alert("Hello World");
+// }
 
 function someRunner(anyFunction) {
   console.log(2+2);
   anyFunction();
 }
 
-someRunner(someOtherFunction);
+var someRunner = function(anyFunction){
+  console.log(2+2);
+  anyFunction();
+}
+
+
+someRunner(function(){
+  alert("Hello World");
+});
