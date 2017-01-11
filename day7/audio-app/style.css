@@ -1,8 +1,15 @@
-#playButton {
+/*#playButton {
   width: 40px;
   height: 40px;
   background-color: red;
   border-radius: 25px;
-
-
+  text-align: center;
 }
+
+#stopButton {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  text-align: center;
+
+}*/

@@ -5,22 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <audio src="mp3s/chorus.mp3" id="chorusTrack"></audio>
-  <audio src="mp3s/voyager.mp3" id="voyagerTrack"></audio>
-  <audio src="mp3s/drums.mp3" id="drumsTrack"></audio>
-  <audio src="mp3s/underpres.mp3" id="underpresTrack"></audio>
+  <audio src="mp3s/voyager.mp3" id="trackPlayer"></audio>
+  <h1 id=text>Loaded: Voyager</h1>
   <div id="playButton">
-
+    <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
   </div>
-  <!-- <ul>
-    <li id="chorus">Aurora Chorus</li>
-    <li id="voyager">Voyager</li>
-    <li id-"drums">Drums</li>
-    <li id="underpres">Under Pressure</li>
-  </ul> -->
+
+   <ul>
+    <li data-song-url= "mp3s/chorus.mp3" id="chorus">Load Aurora Chorus</li>
+    <li data-song-url = "mp3s/voyager.mp3" id="voyager">Load Voyager</li>
+  </ul>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   <script src="script.js"></script>
 
 </body>
