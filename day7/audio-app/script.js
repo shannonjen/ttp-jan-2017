@@ -6,7 +6,9 @@ var myPlaylist = ["chorus.mp3","voyager.mp3"]
 
 function Jukebox(playlist){
   this.playlist = playlist;
+  var bob = "Hello"
   this.nowPlaying = this.playlist[0];
+  this.play =
   this.addTrack = function(track){
     this.playlist.push(track)
   }
@@ -15,6 +17,10 @@ function Jukebox(playlist){
 var myJukebox = new Jukebox(myPlaylist);
 myJukebox.addTrack("song3.mp3");
 console.log(myJukebox.playlist);
+
+document.getElementById("playButton").addEventListener("click", function(){
+  myJukebox.play();
+})
 
 document.getElementById("playButton").addEventListener("click", function(){
   document.getElementById('trackPlayer').play()

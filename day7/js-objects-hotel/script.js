@@ -11,4 +11,7 @@ function Hotel(name, rooms, booked) {
 
 
 var ttp = new Hotel('TTP Inn', 40, 10);
-var qc = new Hotel('QC Hotel', 100, 1);
+var qc = Hotel('QC Hotel', 100, 1);
+
+console.log(ttp)
+console.log(qc)
