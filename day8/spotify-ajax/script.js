@@ -1,15 +1,22 @@
+var songList = [];
+
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
-  var track= document.querySelector("input").value
-  $("ul").append("<li>"+track+"</li>")
+  var trackName= document.querySelector("input").value
+  $("ul").append("<li>"+trackName+"</li>")
+
   $.ajax({
     url: "https://api.spotify.com/v1/search",
     data: {
-      q: track,
+      q: trackName,
       type: "track"
     },
     success: function(response){
-      document.querySelector("audio").setAttribute("src", response.tracks.items[0].preview_url)
+      var audioSrc = response.tracks.items[0].preview_url
+      songList.push(audioSrc)
+      console.log(songList)
+
+      document.querySelector("audio").setAttribute("src", audioSrc)
       console.log(response.tracks.items[0].preview_url);
     }
   })
