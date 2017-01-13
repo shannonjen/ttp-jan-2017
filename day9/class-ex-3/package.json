@@ -1,0 +1,14 @@
+{
+  "name": "class-ex-3",
+  "version": "1.0.0",
+  "description": "A class example to TTP ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jen Shannon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
