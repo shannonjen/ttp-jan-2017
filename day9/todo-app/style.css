@@ -1,0 +1,18 @@
+body {
+  font-family: arial;
+
+}
+ul li {
+  list-style-type: none;
+  font-size: 36px;
+}
+
+ul {
+  padding: 0;
+}
+
+#box {
+  
+  width: 500px;
+  margin: 0 auto;
+}

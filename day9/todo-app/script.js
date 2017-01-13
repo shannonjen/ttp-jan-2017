@@ -13,7 +13,8 @@ var myToDoList = new ToDoList()
 
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
-  var todo = document.querySelector("#todo").value
+  var todo = $("#todo").val();
+  $("#todo").val("")
   myToDoList.addTodo(todo);
 })
 
