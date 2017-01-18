@@ -13,6 +13,11 @@
     <li><%= data[i].name %></li>
   <% } %>
   </ul>
+  <form action="/users" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="email" placeholder="email">
+    <input type="submit" value="Add User">
+  </form>
 
 
 </body>

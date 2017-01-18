@@ -1,7 +1,15 @@
 var pg = require('pg');
 var express = require('express');
+// body parser
+var bodyParser = require('body-parser');
+
+
 
 var app = express();
+
+// json method
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.set('view engine', 'ejs')
 app.set('views', './views')
@@ -28,6 +36,18 @@ app.get('/users', function(req, res){
   })
 })
 
+app.post('/users', function(req,res){
+  pg.connect('postgres://localhost:5432/ttp_jan', function(err, client, done){
+    client.query('INSERT INTO users(name,email)'+' values(${req.body.name},${req.body.email});', function(err, result){
+      console.log(err);
+      console.log('INSERT INTO users(name,email) values('+req.body.name+','+req.body.email+')')
+      // res.redirect('users');
+      done();
+      pg.end();
+    })
+  })
+
+})
 
 app.listen(3000, function(){
   console.log("Listening on port 3000")
