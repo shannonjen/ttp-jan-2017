@@ -38,10 +38,10 @@ app.get('/users', function(req, res){
 
 app.post('/users', function(req,res){
   pg.connect('postgres://localhost:5432/ttp_jan', function(err, client, done){
-    client.query('INSERT INTO users(name,email)'+' values(${req.body.name},${req.body.email});', function(err, result){
+    client.query(`insert into users(name,email) values('${req.body.name}','${req.body.email}')`, function(err, result){
       console.log(err);
-      console.log('INSERT INTO users(name,email) values('+req.body.name+','+req.body.email+')')
-      // res.redirect('users');
+
+      res.redirect('/users');
       done();
       pg.end();
     })
