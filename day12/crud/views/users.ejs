@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Users</h1>
+  <ul>
+  <% for (var i =0; i<data.length; i++) {%>
+    <li><a href=<%="/users/" + data[i].id %>><%= data[i].name %></a></li>
+  <% } %>
+  </ul>
+  <form action="/users" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="email" placeholder="email">
+    <input type="submit" value="Add User">
+  </form>
+
+
+</body>
+</html>
