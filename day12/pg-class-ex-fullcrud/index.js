@@ -78,12 +78,12 @@ app.get('/users/:id', function(req,res){
 })
 
 //create a hat for a user
-app.post('/users/:user_id/hats/:hat_id', function(req,res){
+app.post('/users/:user_id/hats', function(req,res){
   pg.connect('postgres://localhost:5432/ttp_jan', function(err, client, done){
-    client.query(`insert into users(name,email) values('${req.body.name}','${req.body.email}')`, function(err, result){
+    client.query(`insert into hats(name,material,brim,height,user_id) values('${req.body.name}','${req.body.material}',${req.body.brim},${parseInt(req.body.height)},${parseInt(req.body.user_id)})`, function(err, result){
       console.log(err);
 
-      res.redirect('/users');
+      res.redirect('/users/'+req.params.user_id);
       done();
       pg.end();
     })

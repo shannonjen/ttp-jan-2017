@@ -14,12 +14,12 @@
     <li><a href=<%="/users/"+user.id+"/hats/"+hats[i].id %>><%= hats[i].name %></a></li>
   <% } %>
   </ul>
-  <form action="" method="">
+  <form action=<%="/users/"+user.id+"/hats"%> method="post">
     <input type="text" name="user_id" value=<%= user.id%>>
-    <input type="text" name="name">
-    <input type="text" name="material">
-    <input type="text" name="height">
-    <input type="text" name="brim">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="material" placeholder="material">
+    <input type="text" name="height" placeholder="height">
+    <input type="text" name="brim" placeholder="brim">
     <input type="submit" value="Add Hat">
   </form>
 </body>
