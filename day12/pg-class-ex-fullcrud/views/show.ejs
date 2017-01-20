@@ -9,6 +9,18 @@
 <body>
   <h1><%= user.name %></h1>
   <a href=<%="/delete/users/"+user.id %>>Click to delete this user</a>
-
+  <h2>Hats</h2>
+  <% for (var i =0; i<hats.length; i++) {%>
+    <li><a href=<%="/users/"+user.id+"/hats/"+hats[i].id %>><%= hats[i].name %></a></li>
+  <% } %>
+  </ul>
+  <form action="" method="">
+    <input type="text" name="user_id" value=<%= user.id%>>
+    <input type="text" name="name">
+    <input type="text" name="material">
+    <input type="text" name="height">
+    <input type="text" name="brim">
+    <input type="submit" value="Add Hat">
+  </form>
 </body>
 </html>
