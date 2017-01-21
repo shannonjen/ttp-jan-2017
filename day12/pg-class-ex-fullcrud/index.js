@@ -7,9 +7,11 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-// json method
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static('public'));
 
 app.set('view engine', 'ejs')
 app.set('views', './views')
@@ -37,7 +39,7 @@ app.get('/users/:user_id/hats/:hat_id', function(req, res){
         console.log(err);
         response.send("Error" + err);
       } else {
-        res.render('hatshow', { hat: result.rows[0]});
+        res.render('hatshow', { hat: result.rows[0], classNote: "Hey guys!", });
         console.log(result.rows)
       }
     })
@@ -106,6 +108,7 @@ app.post('/users', function(req,res){
 
 })
 
+
 //delete a user
 
 app.get('/delete/users/:id', function(req,res){
@@ -136,6 +139,10 @@ app.put('/users/:id', function(req,res){
       pg.end();
     })
   })
+})
+
+app.get("*", function(req,res){
+  res.redirect('/users')
 })
 
 app.listen(3000, function(){
