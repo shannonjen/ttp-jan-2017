@@ -3,6 +3,8 @@ var app = express();
 var pg = require('pg');
 var bodyParser = require('body-parser');
 
+var passport = require('passport')
+
 var DATABASE_URL = 'postgres://localhost:5432/loginexttpjan'
 
 app.set('view engine', 'ejs');
