@@ -26,9 +26,24 @@ app.get('/login', function(req,res){
 })
 
 app.post('/login', function(req,res){
-  if username exists in the table then check if the password matches
-  if there is a match route to the show. If not, route back to the form
-  res.render('users/show', {username: req.body.username})
+  pg.connect(DATABASE_URL, function(err, client, done){
+    client.query(`select * from users where username='${req.body.username}'`, function(err,result){
+      if(result.rows.length !== 0){
+        if(result.rows[0].password == req.body.password){
+          res.render('users/show', {username: result.rows[0].username});
+        } else {
+          console.log("password is wrong")
+          res.redirect('/login')
+        }
+      } else{
+        console.log("USER DOES NOT EXISTS!!!")
+        res.redirect('/login')
+      }
+    })
+  })
+  // if username exists in the table then check if the password matches
+  // if there is a match route to the show. If not, route back to the form
+  // res.render('users/show', {username: req.body.username})
 })
 app.listen(3000, function(){
   console.log('Listening on port 3000');
