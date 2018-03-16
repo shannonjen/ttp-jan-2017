@@ -1,4 +1,4 @@
-#Queens College Tech Talent Pipeline January 2017
+# Queens College Tech Talent Pipeline January 2017
 
 
 ## Fullstack Tutorials & Code Samples
@@ -36,19 +36,19 @@ https://www.postgresql.org/docs/9.5/static/app-psql.html
 
 ## Our Stack
 
-###Node.js
+### Node.js
 https://nodejs.org/
 
-###Express
+### Express
 http://expressjs.com/
 
-###PostgreSQL
+### PostgreSQL
 https://www.postgresql.org/
 
-###npm
+### npm
 https://www.npmjs.com/
 
-###handlebars
+### handlebars
 http://handlebarsjs.com/
 
 
@@ -82,27 +82,27 @@ https://karma-runner.github.io/0.13/index.html
 
 ### Backbone
 
-##Reference (my favorites)
-###HTML Elements
+## Reference (my favorites)
+### HTML Elements
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-###CSS properties, psuedo-classes, units,...
+### CSS properties, psuedo-classes, units,...
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-###Git
+### Git
 https://git-scm.com/docs
 
-##Free Learning Resources (my favorites)
-###HTML & CSS
+## Free Learning Resources (my favorites)
+### HTML & CSS
 http://learn.shayhowe.com/html-css/
-###Git
+### Git
 https://try.github.io
 
 https://git-scm.com/book/en/v2
 
 https://www.atlassian.com/git/tutorials/comparing-workflows
 
-###JavaScript
+### JavaScript
 http://eloquentjavascript.net/
-###Node
+### Node
 http://nodeschool.io/
 
 ##Newsletters
