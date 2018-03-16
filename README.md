@@ -14,7 +14,7 @@ https://www.terlici.com/2014/08/25/best-practices-express-structure.html
 #### RESTful API with pg-promise
 http://mherman.org/blog/2016/03/13/designing-a-restful-api-with-node-and-postgres/#.V2pkEZMrKRs
 
-###pg-promise best practices
+### pg-promise best practices
 https://github.com/vitaly-t/pg-promise-demo
 
 ### Heroku with Node
@@ -105,12 +105,12 @@ http://eloquentjavascript.net/
 ### Node
 http://nodeschool.io/
 
-##Newsletters
+## Newsletters
 http://javascriptweekly.com/
 
 http://html5weekly.com/
 
-##Meetups
+## Meetups
 Monthly JS Meetup (sells out in minutes)
 
 http://brooklynjs.com/
